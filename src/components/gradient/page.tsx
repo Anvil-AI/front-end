@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const GradientPage = () => {
+const GradientMouse = () => {
 
     const [mousePosition, setMousePosition] = React.useState({ x: 50, y: 50 });
     useEffect(() => {
@@ -40,4 +40,4 @@ const GradientPage = () => {
 
     );
 };
-export default GradientPage;
+export default GradientMouse;
