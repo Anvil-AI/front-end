@@ -6,15 +6,14 @@ import Footer from "@/components/footer/page";
 
 export default function HomePage() {
     return (
-        <div>
-            <div className="pt-96">
+        <div className="pb-24">
+            <div className="flex justify-center pt-96">
                 <a>Home</a>
             </div>
-            <div className="pt-96">
+            <div className="flex justify-center pt-96">
                 <a>Home</a>
             </div>
-            
-            <Footer />
+            <Footer/>
         </div>
     );
 }

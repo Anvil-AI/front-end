@@ -26,11 +26,11 @@ export default function Home() {
 
         <div className="flex flex-col h-full justify-center items-center">
           <div className="pb-3">
-            <button className="pr-5">
+            <button className="mr-4 p-1">
               <Link href="/home">Login</Link>
             </button>
 
-            <button className="pl-5">
+            <button className="ml-4 p-1">
             <Link href="/cadastro">Cadastrar</Link>
             </button>
           </div>
