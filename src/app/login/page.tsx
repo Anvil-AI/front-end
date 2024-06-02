@@ -6,11 +6,11 @@ export default function Login() {
   return (
     <div 
     className="
-      min-h-screen 
-      bg-gradient-to-r 
-      from-[#6EFC6B] 
-      to-[#FFFFFF] 
-      flex 
+      min-h-screen
+      bg-gradient-to-r
+      from-[#6EFC6B]
+      to-[#FFFFFF]
+      flex
       flex-row
       p-12
       justify-between

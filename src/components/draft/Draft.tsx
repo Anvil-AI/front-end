@@ -9,7 +9,7 @@ export default function Draft() {
             <h1 id={"question"} className="text-base mb-4">
                 1. Qual é sintaxe para iterar sobre uma lista de itens em java?
             </h1>
-            <div className="bg-gray-100 min-w-fit rounded-md border border-gray-400 h-80">
+            <div className="bg-gray-100 min-w-fit rounded-md border border-gray-400 h-60">
                 <div className="flex flex-row justify-between px-6 py-3">
                     <div className="flex items-center">
                         <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
@@ -22,7 +22,7 @@ export default function Draft() {
                 <textarea 
                     name="draft" 
                     id="draft"
-                    rows={10}
+                    rows={7}
                     className="bg-gray-100 mx-7 resize-none w-11/12 focus:outline-none font-draft" 
                     autoComplete="false" 
                     spellCheck="false"

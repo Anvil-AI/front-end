@@ -1,6 +1,8 @@
 "use client"
 
 import BackButton from "@/components/back-button/BackButton";
+import Link from "next/link";
+
 
 export default function Register() {
   return (
@@ -144,7 +146,7 @@ export default function Register() {
         type="submit"
         className="
           self-center
-          bg-gray-200
+          bg-gray-400
           font-body
           w-2/5
           py-2
@@ -152,7 +154,9 @@ export default function Register() {
           mt-16
           text-base
           select-none
-        ">Criar conta</button>
+        ">
+          <Link href="/">Criar conta</Link>
+        </button>
       </form>
     </div>
   );

@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar location={NavbarLocation.home}></Navbar>
       <div className="flex justify-center w-screen">
         <Question></Question>
-        <EvaQuestionResponse></EvaQuestionResponse>
+        {/* <EvaQuestionResponse></EvaQuestionResponse> */}
       </div>
       <Bottombar></Bottombar>
     </div>
