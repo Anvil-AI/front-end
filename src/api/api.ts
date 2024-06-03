@@ -40,16 +40,7 @@ export const getQuestionById = async (id: string) => {
   }
 };
 
-export const createQuestion = async (question: any) => {
-  try {
-    const response = await axiosInstance.post(`/api/questions`, question);
-    return response.data;
-  } catch (error) {
-    console.error('Erro ao criar pergunta:', error);
-    throw error;
-  }
-};
-
+// funcao para verificar a resposta da pergunta
 export const checkAnswer = async (id: string, question: string, userAnswer: string) => {
   try {
     const response = await axiosInstance.post(`/api/questions/${id}/answer`, { question, userAnswer });
@@ -60,15 +51,6 @@ export const checkAnswer = async (id: string, question: string, userAnswer: stri
   }
 };
 
-export const generateQuestion = async (subject: string, difficulty: string) => {
-  try {
-    const response = await axiosInstance.post(`/api/questions/generate`, { subject, difficulty });
-    return response.data;
-  } catch (error) {
-    console.error('Erro ao gerar pergunta:', error);
-    throw error;
-  }
-};
 
 export const getQuestion = async () => {
   try {
@@ -83,7 +65,9 @@ export const getQuestion = async () => {
 export const generateAndSaveQuestion = async (user: any) => {
   try {
     const response = await axiosInstance.post(`/api/questions/generateAndSave`, user);
-    return response.data;
+    // A pergunta gerada é retornada junto com a resposta
+    const generatedQuestion = response.data;
+    return generatedQuestion;
   } catch (error) {
     console.error('Erro ao gerar e salvar pergunta:', error);
     throw error;
